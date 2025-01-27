@@ -6,12 +6,23 @@ build-backend = "setuptools.build_meta"
 name = "alquran-cli"
 version = "0.1.1"
 description = "CLI untuk memberikan isi alquran dan hadits"
+authors = [{
+    name = "Anggi Ananda",
+    email = "anggiangga443@gmail.com"
+}]
+license = {
+    file = "LICENSE"
+}
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "click>=8.1.8",
     "requests>=2.32.3",
 ]
+
+[project.urls]
+homepage = "https://github.com/anggiAnand/alquran-cli.git"
+repository = "https://github.com/anggiAnand/alquran-cli.git"
 
 [project.scripts]
 alquran = "alquran.alquran:cli"
