@@ -9,6 +9,8 @@ include-package-data = true
 name = "alquran-cli"
 version = "0.1.1"
 description = "CLI untuk memberikan isi alquran dan hadits"
+long_description = { file = "README.md" }
+long_description_content_type = "text/markdown"
 authors = [
     { name = "Anggi Ananda", email = "anggiangga443@gmail.com" }
 ]
