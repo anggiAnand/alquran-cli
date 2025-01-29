@@ -83,6 +83,9 @@ def lihat_hadits(id_hadits, nomor_hadits, range):
         if hadits["code"] == 400 and hadits["error"] == True:
             click.echo("Tidak bisa >300 range (Masalah performa)")
             return
+        if hadits["code"] == 404 and hadits["error"] == True:
+            click.echo(hadits["message"])
+            return
         data = hadits["data"]
         click.echo("-" * shutil.get_terminal_size().columns+"\n")    
         for hadith in data["hadiths"]:
