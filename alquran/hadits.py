@@ -1,4 +1,5 @@
 import requests
+import re
 from alquran.config import API_HADITH_URL, RANGE_PATTERN
 
 def get_hadits_list():
@@ -25,7 +26,7 @@ def daftar_hadith():
         return False
     return data
 
-def lihat_hadith(id_hadits, nomor_hadits, range):
+def lihat_hadith(id_hadits, nomor_hadits, range=None):
     """Memberikan isi dari sebuah hadits berdasarkan spesifikasi"""
     if range:
         range = re.findall(RANGE_PATTERN, range)

@@ -1,4 +1,5 @@
 import requests
+import re
 from alquran.config import API_SURAH_URL
 
 def get_surah_list():
@@ -29,7 +30,7 @@ def detail_surat(nomor_surah):
     surah = get_surah_details(nomor_surah)
     return surah
 
-def isi_surat(nomor_surah, ayat):
+def isi_surat(nomor_surah, ayat=None):
     """Memberikan isi bacaan ayat ayat berdasarkan nomor surah"""
     if nomor_surah > 114:
       print("Al-Quran hanya berisi sebanyak 114 surah")
