@@ -1,4 +1,5 @@
 import click
+import shutil
 from alquran.core import lihat_hadith, daftar_hadith, isi_surat, detail_surat, tafsir_surat, daftar_surat
 
 @click.group()
