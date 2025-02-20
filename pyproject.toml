@@ -7,7 +7,7 @@ include-package-data = true
 
 [project]
 name = "alquran-cli"
-version = "0.2.5"
+version = "0.2.6"
 description = "CLI untuk memberikan isi alquran dan hadits"
 authors = [
     { name = "Anggi Ananda", email = "anggiangga443@gmail.com" }
