@@ -7,12 +7,12 @@ def cli():
   pass
 
 @cli.group()
-def hadits():
+def surah():
   """Kategori : Surah - Surah Al-Qur'an"""
   pass
 
 @cli.group()
-def surah():
+def hadits():
   """Kategori : Riwayat - Riwayat Hadits"""
   pass
 
