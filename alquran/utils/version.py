@@ -13,8 +13,7 @@ def check_package_update(package_name):
         
         if installed_version != latest_version:
             print(f"Package '{package_name}' is outdated: {installed_version} -> {latest_version}")
-        else:
-            print(f"Package '{package_name}' is up to date ({installed_version})")
+            print(f"Please immediately update using 'pip install --upgrade {package_name}'")
     except importlib.metadata.PackageNotFoundError:
         print(f"Package '{package_name}' is not installed.")
     except httpx.RequestError as e:
