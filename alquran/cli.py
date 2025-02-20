@@ -1,6 +1,5 @@
 import click
-from alquran.hadits import lihat_hadith, daftar_hadith
-from alquran.surah import isi_surat, detail_surat, tafsir_surat, daftar_surat
+from alquran.core import lihat_hadith, daftar_hadith, isi_surat, detail_surat, tafsir_surat, daftar_surat
 
 @click.group()
 def cli():
